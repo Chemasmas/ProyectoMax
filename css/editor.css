@@ -1,0 +1,25 @@
+#barraH
+{
+	width: 100%;
+	min-width: 450px;
+	height: 50px;
+	background-color: blue;
+}
+
+#vistaPrevia
+{
+	width: 80%;
+	min-width: 350px;
+	height: 350px;
+	background-color: orange;
+	float:left;
+}
+
+#modificadores
+{
+	width: 20%;
+	min-width: 100px;
+	height: 350px;
+	background: gray;
+	float: left;
+}
