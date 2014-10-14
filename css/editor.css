@@ -23,3 +23,12 @@
 	background: gray;
 	float: left;
 }
+
+.botonB
+{
+	height: 50px;
+	width: 50px;
+	background-color: red;
+	float:left;
+	margin-left: 5px;
+}

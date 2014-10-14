@@ -13,7 +13,7 @@
 			})
 			.done(function(html)
 			{
-				alert("Exito");
+				//alert("Exito");
 				$("section").append(html);
 			})
 			.fail(function()
@@ -22,7 +22,7 @@
 			}).
 			complete(function()
 			{
-				alert("Terminado");
+				//alert("Terminado");
 			});
 		}
 	);
