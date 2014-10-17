@@ -17,7 +17,7 @@
                 <form action="">
                 <input type="text" />
                     <a href="#" title="Doc">Doc</a>
-                    <a href="#" title="Estilo">Estilo</a>
+                    <a href="editor.php" title="Estilo">Estilo</a>
                     <a href="#" title="Admin">Admin</a>
                     <a href="index.php" title="Salir">Salir</a>
 					</form>
