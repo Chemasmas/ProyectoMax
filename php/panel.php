@@ -2,8 +2,8 @@
 <head>
 </head>
 <link rel="stylesheet" href="css/editor.css">
-<script src="js/pruebas.js"></script>
-<script src="js/modificadores.js"></script>
+<script src="js/toolbar.js"></script>
+<script src="js/customize.js"></script>
 <body>
 	<div id="barraH">
 		<div id="opc1" class="botonB"></div>

@@ -39,28 +39,28 @@
 }
 
 div #opc1{
-  	 background: url(../imagenes/save.png) no-repeat;
+  	 background: url(../res/save.png) no-repeat;
 }
 div #opc2{
-    background: url(../imagenes/settings.png) no-repeat;
+    background: url(../res/settings.png) no-repeat;
 }
 div #opc3{
-    background: url(../imagenes/ajustes.png) no-repeat;
+    background: url(../res/ajustes.png) no-repeat;
 }
 div #opc4{
-    background: url(../imagenes/save.png) no-repeat;
+    background: url(../res/save.png) no-repeat;
 }
 div #opc5{
-    background: url(../imagenes/save.png) no-repeat;
+    background: url(../res/save.png) no-repeat;
 }
 div #opc6{
- 	background: url(../imagenes/save.png) no-repeat;
+ 	background: url(../res/save.png) no-repeat;
 }
 div #opc7{
- 	background: url(../imagenes/save.png) no-repeat;
+ 	background: url(../res/save.png) no-repeat;
 }
 div #opc8{
- background: url(../imagenes/save.png) no-repeat;
+ background: url(../res/save.png) no-repeat;
 }
 body {
     font-family: Cambria, Arial;
