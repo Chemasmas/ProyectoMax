@@ -9,7 +9,7 @@
 	<body>
     	<div align="center"  style=" margin:0 auto; alignment-adjust:central; width: 1024px; height:600px;"> 
   			<header>
-           	<div style="width: 1024px; height:100px; background:url(imagenes/encabezado.png) no-repeat">
+           	<div style="width: 1024px; height:100px; background:url(res/encabezado.png) no-repeat">
               </div>
            </header>
     		<div class="navMenu expander">
@@ -38,7 +38,7 @@
               Torre III, 5to. piso. Avenida Vasco de Quiroga 4871,<br />
 				Colonia Santa Fe Cuajimalpa. Delegación Cuajimalpa de Morelos, Tel. +52 (55) 5814-6550 y 51. C.P. 05300, México, D.F. http://dccd.cua.uam.mx</p>
                 </td>
-                <td>  <img src="imagenes/pie.png"></td>
+                <td>  <img src="res/pie.png"></td>
                 
                 </tr>
                 </table>
