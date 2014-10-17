@@ -1,5 +1,5 @@
 <?php
-	require_once "php/template.php";
+	require_once "template.php";
 ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
 
@@ -9,7 +9,7 @@
 		{
 			$("title").html("Editor De Imagenes");
 			var doc=$.ajax({
-				url:"php/panel.php"
+				url:"panel.php"
 			})
 			.done(function(html)
 			{

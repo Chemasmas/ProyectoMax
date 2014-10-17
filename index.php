@@ -1,4 +1,4 @@
-@@ -1,40 +0,0 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -35,9 +35,6 @@
 		</div>
 	</div>
 	<div class="gradient"></div>
-        
-        
     </body>
 </html>
- No newline at end of file
 
