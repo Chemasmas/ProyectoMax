@@ -70,9 +70,7 @@ body {
     max-width: 600px;
     margin: 20px auto;
 }
-input {
-    opacity: 0;
-}
+
 label {
     cursor: pointer;
     background: -webkit-linear-gradient(#666, #555);
@@ -116,9 +114,6 @@ input:checked + label {
     margin: 0;
     font-family: Arial;
 }
-
-
-
 
 fieldset {
   width: 120px;

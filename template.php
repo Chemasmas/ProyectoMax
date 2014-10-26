@@ -30,7 +30,7 @@
     		
             <footer>
             	<hr color="#FF6633"/>
-            	<table width="1024px"	 align="center">
+            	<table width="1024px" align="center">
                 <tr>
                 <td>
               <p id="footer_one"><strong>Unidad Cuajimalpa</strong></p>
