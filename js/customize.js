@@ -1,8 +1,82 @@
+var selected;
+//Funcion para el Click
+function addListeners()
+{
+    
+    $("#vistaPrevia > * > *").click(function(elem)
+        {
+            console.log(elem.target);
+            selected=elem.target;
+            modificadores();
+        });
+    console.log("Cargado");
+}
 
- $(document).ready(function(){
+function modificadores()
+{
     var sub=false;
     var neg=false;
-	$("#letraTamaño").val($("#texto").css("font-size"));
+
+    $("#letraTamaño").val($(selected).css("font-size"));
+
+    $("#subrayado").click(function(){
+        if(sub==false){
+            $(selected).css("text-decoration","underline");
+            sub=true;
+        }else{
+            $(selected).css("text-decoration","none");
+            sub=false;
+        }
+    });
+
+    $("#negrita").click(function(){
+        if(neg==false){
+            $(selected).css("font-weight","bold");
+            neg=true;
+        }else{
+            $(selected).css("font-weight","normal");
+            neg=false;
+        }
+    });
+
+    $("#letraTamaño").change(function(){
+            $(selected).css("font-size", $('#letraTamaño').val() + "px");
+            $("#letraTamaño").val($(selected).css("font-size"));
+    });
+
+    $("#aumentar").click(function(){
+            var tamaño = $(selected).css("font-size");
+            var newTamaño = tamaño.substring(0, tamaño.length-2);
+            newTamaño = parseInt(newTamaño);
+            $(selected).css("font-size", (newTamaño+1));
+            $("#letraTamaño").val($(selected).css("font-size"));
+    });
+    $("#disminuir").click(function(){
+            var tamaño = $(selected).css("font-size");
+            var newTamaño = tamaño.substring(0, tamaño.length-2);
+            $(selected).css("font-size", (newTamaño-1));
+            $("#letraTamaño").val($(selected).css("font-size"));
+    });
+
+    $("#color_letra").change(function(){
+             var color_letra = $("#color_letra").val();
+             $(selected).css({'color': color_letra});
+          });
+          
+    
+    $("#color_fondo").change(function(){
+             var color_fondo = $("#color_fondo").val();
+             $(selected).css({'background-color': color_fondo});
+    });
+}
+
+/*
+ $(document).ready(function(){
+
+    var sub=false;
+    var neg=false;
+
+	$("#letraTamaño").val($(elem).css("font-size"));
 	//SUBRAYADO
     $("#subrayado").click(function(){
         //alert("subrayado");
@@ -61,3 +135,4 @@
           });
 	
 });
+*/

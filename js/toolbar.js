@@ -1,12 +1,15 @@
 $().ready(
 	function()
 	{
-		//Aqui podemos asignar las funciones de los botones
-		//Ejemplo
+		//OpcionUno Cargar Archivo
 		$("#opc1").click(
 			function()
 			{
-				alert("Esta es la opcion 1");
+				console.log("La carga del Archivo");
+				$('#vistaPrevia').load('./html/basic.html', function()
+				{
+					addListeners();
+				}); //Esta ruta aun esta pendiente
 			});
 		$("#opc2").click(
 			function()

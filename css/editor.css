@@ -5,6 +5,7 @@
 	height: 350px;
 	background-color: #E0E0E0;
 	float:left;
+    overflow:auto;
 }
 
 #modificadores

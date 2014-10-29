@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   	<head>
@@ -17,12 +18,11 @@
 			})
 			.done(function(html)
 			{
-				//alert("Exito");
 				$("section").append(html);
 			})
 			.fail(function()
 			{
-				alert("Fallo");
+				alert("No se cargo el editor");
 			}).
 			complete(function()
 			{
