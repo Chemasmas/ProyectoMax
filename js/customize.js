@@ -1,14 +1,14 @@
 var selected;
+var texto;
 //Funcion para el Click
 function addListeners()
 {
-    
     $("#vistaPrevia > * > *").click(function(elem)
         {
-            console.log(elem.target);
+            //console.log(elem.target);
             selected=elem.target;
-            modificadores();
         });
+    modificadores();
     console.log("Cargado");
 }
 
@@ -45,6 +45,7 @@ function modificadores()
     });
 
     $("#aumentar").click(function(){
+
             var tamaño = $(selected).css("font-size");
             var newTamaño = tamaño.substring(0, tamaño.length-2);
             newTamaño = parseInt(newTamaño);
@@ -68,6 +69,18 @@ function modificadores()
              var color_fondo = $("#color_fondo").val();
              $(selected).css({'background-color': color_fondo});
     });
+
+    $("#fontType").change(function(){
+        $(selected).css("font-family", $('#fontType').val());
+        $("#fontType").val($(selected).css("font-family"));
+    });
+
+    $(selected).select(function(){
+        selectedText = document.getSelection();
+        console.log("Ok");
+        console.log(selectedText);
+    });
+
 }
 
 /*

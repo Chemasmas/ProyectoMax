@@ -1,8 +1,8 @@
-
 <!doctype html>
 <html>
   	<head>
   		<link rel="stylesheet" href='css/template.css' type="text/css" />
+        <link rel="stylesheet" href='css/fuentes.css' type="text/css" />
 		<meta charset="UTF-8" />
        	<title>Template</title>
 

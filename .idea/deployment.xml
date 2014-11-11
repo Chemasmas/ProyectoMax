@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="EONDEF">
+    <serverData>
+      <paths name="EONDEF">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="ProgWeb/Proyecto/ProyectoMax" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
+

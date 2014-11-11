@@ -37,6 +37,13 @@
           	<option value="orange"> Naranja </option>
           	<option value="violet"> Violeta </option>
         </select>
+        <br>
+      <p>Tipo de Fuente</p>
+      <select id="fontType">
+          <option>Selecciona una fuente</option>
+          <option value="pro"> Pro </option>
+          <option value="arial"> Arial </option>
+      </select>
   </fieldset>
 
 </section>	
