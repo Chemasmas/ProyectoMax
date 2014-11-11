@@ -6,7 +6,7 @@ $().ready(
 			function()
 			{
 				console.log("La carga del Archivo");
-				$('#vistaPrevia').load('./html/basic.html', function()
+				$('#vistaPrevia').load('./html/template4.html', function()
 				{
 					addListeners();
 				}); //Esta ruta aun esta pendiente
