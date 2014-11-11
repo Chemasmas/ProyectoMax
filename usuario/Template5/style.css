@@ -1,0 +1,238 @@
+body {
+		font: 12px  "Trebuchet MS", Verdana, sans-serif;
+		color: #666666;
+		background: #FFFFFF;
+}
+* {
+		padding:0; margin:0;
+}
+.claro {
+		clear:both;
+}
+#envolver {
+		background:url(images/background7.jpg) no-repeat; 
+		width:783px; 
+		margin:auto; 
+		border-top: solid 8px #efefef
+}
+#encabezamiento {
+		height:128px;
+}
+#contenido {
+		padding:0 38px 25px 38px;
+}
+
+a {
+	color:#006600; 
+	text-decoration:none;
+}
+a:visited,active { 
+	text-decoration:none; 
+	color:#003300;
+}
+a:hover {
+	color:#000; 
+	text-decoration:underline;
+}
+#contenido p {
+	line-height:22px;
+}
+h2 {
+	font: normal 18px "Trebuchet MS", Verdana, sans-serif;
+	color: #808040;
+}
+h3 {
+	font: normal 17px "Trebuchet MS", Verdana, sans-serif;
+	color: #987D7D;
+}
+#contenido h3 {
+	font: bold 14px "Trebuchet MS", Verdana, sans-serif; 
+	color:#666;
+}
+#contenido .subhead {
+	display:block; 
+	padding:3px 5px 0 8px; 
+	margin-bottom:5px;
+}
+
+/*Pagina de Columnas*/
+#col_1 {
+	width:30%; 
+	float:left; 
+	padding:5px;
+}
+#col_3 {
+	margin-left:33%; 
+	margin-right:33%; 
+	padding:5px;
+}
+#col_2 {
+	width:30%; 
+	float:right; 
+	padding:5px;
+}
+#col { 
+	padding:45px 5px 20px 5px; 
+	margin-bottom15px;
+}
+#col_1 p, #col_2 p, #col_3 p {
+	padding:0 8px 5px 8px;  
+	line-height:18px; 
+	height:120px}
+
+#contenido div img {
+	background:#efefef; 
+	border:solid 1px #cccccc; 
+	padding:3px;
+}
+.Izquierda {
+	float:left; 
+	margin:5px 10px 5px 0;
+}
+.Derecha {
+	float:right; 
+	margin:5px 5px 5px 10px;
+}
+
+.boton {
+	display:block;  
+	width:79px;
+	height:22px;
+    text-align:right; 
+    padding:5px 20px 0 5px; 
+}
+#NombreSitio {
+	display:block;
+	padding: 60px 55px 0 45px;
+	color: #808040;
+	font: bolder small-caps 22px "Trebuchet MS", Verdana, sans-serif;
+	text-align:right;
+}
+#NombreSitio .desc {
+	font-size:14px; 
+	color:#ccc; 
+	font-variant:normal; 
+	display:block
+}
+#MenuSuper ul {
+	text-align:center; 
+	display:block; 
+	float:right; 
+    width:500px;
+
+}
+#MenuSuper li {
+	display: inline;
+}
+#MenuSuper a, #MenuSuper a:visited, #MenuSuper a:active{
+	display:block; 
+	float:left; 
+	height:21px; 
+	padding: 5px 15px 0 15px; 
+	text-decoration:none; 
+	color:#000000;
+}
+#MenuSuper .active a, #MenuSuper .activo a:visited, #MenuSuper .activo a:active { 
+	color:#000;
+}
+
+#ft_btm{
+	padding:30px 230px 20px 30px;
+	text-align: right;
+
+}
+#btm_cont {
+	padding:5px 45px 30px 45px; 
+	background:url(images/background8.jpg) no-repeat center bottom;
+	height:25px; 
+}
+.btm_box {
+	width:110px; 
+	padding:5px; 
+	float:left; 
+	margin:50px;
+}
+
+#rightcontent {
+	float:right; 
+	width:950px; 
+	padding:25px 0 0 0;
+}
+#BarraLateral { 
+	margin:0px 1000px 10px 100px; 
+	padding-top:25px;
+}
+
+#contenido table {
+	width:90%;
+	border:1px solid #A0C6EB;
+	margin-bottom:20px;
+}
+#contenido th {
+	background:#D2E3F3;
+	padding:5px 15px 5px 15px;
+	color:#000000;
+	font-weight:bold;
+	text-align:center;
+	border-bottom:1px solid #BDDB99;
+	font-size: 16px;
+}
+#contenido td {
+	border-bottom:1px solid #D2E3F3;
+	padding:5px 15px 5px 15px;
+	border-right:1px solid #D2E3F3;
+}
+
+
+.texto {
+	display: block;
+	width:50%;
+	margin:3px 3px 3px 30px;
+	padding:3px;
+	border: 1px solid #D2E3F3;
+	background: #EEF4FB;
+}
+label {	
+	display:block; 
+	margin:3px; 
+	padding: 5px;
+}
+.button {
+	display: block;
+	padding:0px;
+	margin:3px;
+	border: 2px solid #C8E9F7;
+	color:#000000;
+	background: #EEF4FB;
+}
+.texto:hover {
+	background:#FFFFCC;
+}
+.texto:focus {background:#ffffff;}
+.hide {display:none;}
+
+#derecha ul, #derecha ol {padding:10px; margin:10px;}
+ol {list-style:decimal;}
+#derecha ul {list-style: square;}
+#derecha p {margin-bottom:20px;}
+#derecha li {padding:3px;}
+
+#BarraLateral ul {list-style:none; margin-bottom:15px;}
+#BarraLateral li {display:block; height:25px; border-bottom:dashed 1px #CCCCCC;}
+#BarraLateral li a {display:block; height:20px; padding:5px 5px 0 5px;}
+#BarraLateral li a:hover {background:#efefef; text-decoration:none;}
+
+blockquote {
+	display:block; 
+	padding:5px 5px 5px 55px; 
+	margin:5px; 
+}
+blockquote p {
+	margin-bottom:0;
+	font: normal 16px Georgia, "Times New Roman", Times, serif;
+}
+.extract { 
+	float:left; 
+	width:350px;
+	padding:0px 0 0 0;
+}

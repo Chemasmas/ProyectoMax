@@ -8,6 +8,15 @@
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
 
+        <style>
+            #archivoModal
+            {
+                position:absolute;
+                z-index: 3;
+                left:200px;
+                bottom: 200px;
+            }
+        </style>
 <script>
 	$().ready(
 		function()
@@ -26,8 +35,9 @@
 			}).
 			complete(function()
 			{
-				//alert("Terminado");
+                $("#archivoModal").hide();
 			});
+
 		}
 	);
 </script>
@@ -73,6 +83,14 @@
                 </table>
             </footer>
     </div>
+
+    <div id="archivoModal">
+        <span>Prueba</span>
+        <select id="file"></select>
+        <input TYPE="button" id="Fileaceptar" value="Ok!">
+        <input TYPE="button" id="Filecancel"" value="Cancel!">
+    </div>
+
     </body> 
     </html>  
    
