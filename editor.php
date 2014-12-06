@@ -1,47 +1,21 @@
 <!doctype html>
 <html>
   	<head>
+        <link rel="stylesheet" href="css/editor.css">
   		<link rel="stylesheet" href='css/template.css' type="text/css" />
         <link rel="stylesheet" href='css/fuentes.css' type="text/css" />
 		<meta charset="UTF-8" />
-       	<title>Template</title>
+       	<title>Editor de Imagenes</title>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
+        <!--jquery-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
 
-        <style>
-            #archivoModal
-            {
-                position:absolute;
-                z-index: 3;
-                left:200px;
-                bottom: 200px;
-            }
-        </style>
-<script>
-	$().ready(
-		function()
-		{
-			$("title").html("Editor De Imagenes");
-			var doc=$.ajax({
-				url:"php/panel.php"
-			})
-			.done(function(html)
-			{
-				$("section").append(html);
-			})
-			.fail(function()
-			{
-				alert("No se cargo el editor");
-			}).
-			complete(function()
-			{
-                $("#archivoModal").hide();
-			});
+        <!--jquery ui-->
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
-		}
-	);
-</script>
-
+        <script src="js/customize.js"></script>
+        <script src="js/chema.js"></script>
 
   	</head>
   
@@ -53,18 +27,17 @@
            </header>
     		<div class="navMenu expander">
     			<nav>
-                <form action="">
-                <input type="text" />
                     <a href="#" title="Doc">Doc</a>
                     <a href="editor.php" title="Estilo">Estilo</a>
                     <a href="#" title="Admin">Admin</a>
                     <a href="index.php" title="Salir">Salir</a>
-					</form>
                 </nav>
               </div>
     		
             <section style="height:400px; width:1024;">
-    			<!--Contenido-->    
+
+    			<?php include "php/panel.php" ?>
+
  		   	</section>
     		
             <footer>
@@ -84,12 +57,7 @@
             </footer>
     </div>
 
-    <div id="archivoModal">
-        <span>Prueba</span>
-        <select id="file"></select>
-        <input TYPE="button" id="Fileaceptar" value="Ok!">
-        <input TYPE="button" id="Filecancel"" value="Cancel!">
-    </div>
+
 
     </body> 
     </html>  

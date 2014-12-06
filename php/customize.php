@@ -1,13 +1,5 @@
-<html>
-<head>
-</head>
-<link rel="stylesheet" href="css/editor.css">
-<script src="js/customize.js"></script>
-<body>
-<section>
-  <fieldset><legend align="left">Texto</legend>
-    	<hr>
-  		<p>Tipo de letra</p>
+<hr>
+    <p>Tipo de letra</p>
   		<input id="negrita" title="Negrita" name="negrita" type="button" value="N">
   		<input id="subrayado" title="Subrayado" name="subrayado" type="button" value="S">
         <br/><br/>
@@ -44,8 +36,3 @@
           <option value="pro"> Pro </option>
           <option value="arial"> Arial </option>
       </select>
-  </fieldset>
-
-</section>	
-</body>
-</html>

@@ -8,13 +8,35 @@
     overflow:auto;
 }
 
-#modificadores
+#tools
 {
 	width: 20%;
 	min-width: 100px;
 	height: 350px;
 	background:#CCC;
 	float: left;
+    padding: 0px;
+    border: 0px;
+}
+#tools>ul
+{
+    width:95%;
+}
+#tools > ul > li
+{
+
+
+}
+#scroll
+{
+    overflow: scroll;
+    height: 300px;
+}
+#tools>div
+{
+    width:100%;
+    padding:0px;
+
 }
 
 .botonB
