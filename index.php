@@ -1,40 +1,53 @@
-
-<!DOCTYPE html>
 <html>
     <head>
-        <title> Login</title>
-        <script type= "text/JavaScript" src="js/md5.js"></script>
-        <script type= "text/JavaScript" src="js/forms.js"></script>
-        <link rel='stylesheet' type='text/css' href='css/login.css' />
+        <meta charset="utf-8" />
+        <title>Login</title>
+		     
+         <link rel="stylesheet" href="styles.css"/>
+        
     </head>
-    <body>
-    <header>
-    
-    </header>
-        <?php
-        if (isset($_GET['error'])) {
-            echo '<p> Error Logging In! </p>';
-        }
-        ?>
-        <div id="wrapper">
-			<form name="login-form" class="login-form" action="includes/login.php" method="post">
 	
-		<div class="header">
-		<h1>Login</h1>
-		<span>Introduce tu usuario</span>
+	<body>
+
+		<TABLE WIDTH=50 HEIGHT=50>
+
+		<TD width=100 VALIGN=TOP>
+		<tr rowspan="2">
+		<img src="logo.png" width='150' height='80' ALIGN="left">
+		</tr>
+		<tr>
+		<h2>UNIVERSIDAD AUT&OacuteNOMA METROPOLITANA</h2>
+		</tr>
+		</TD>
+
+		<TD width=50 VALIGN=TOP>
+		<tr></tr>
+		<tr>
+		<h3>Unidad Cuajimalpa</h3>
+		</tr>
+		</TD>
+
+		</TABLE>
+		
+    	<div id="formContainer">
+		
+			<form id="login" method="post" action="Archivos.php">
+			    
+				<h1>Login</h1>
+				<center>
+				<input type="text" name="usuario" size="20" placeholder="username">
+				<br>
+				<input type="password" name="pswd" size="12" placeholder="password">
+				<br><br>
+				<input type="submit" name="login" value="Iniciar sesion">
+			    </center>
+			</form>
 		</div>
-		<div class="content">
-		<input name="usuario" type="text" class="input username" placeholder="Usuario" />
-		<div class="user-icon"></div>
-		<input name="password" type="password" class="input password" placeholder="Password" />
-		<div class="pass-icon"></div>		
-		</div>
-		<div class="footer">
-		<input type="submit" name="submit" value="Login" class="button" />
-        </form>
-		</div>
-	</div>
-	<div class="gradient"></div>
+
+        
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="script.js"></script>
+
     </body>
 </html>
 

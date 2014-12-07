@@ -1,0 +1,132 @@
+.claro {
+		clear:both;
+}
+#envolver {
+		background:url(../img/background7.jpg) no-repeat; 
+		width:800px; 
+		margin:auto; 
+		/*border-top: solid 8px #F29722;*/
+}
+#encabezado {
+		height:100px;
+}
+
+#titulo-encabezado{
+	padding-top: 90px;
+	padding-left: 164px;
+	font: normal 36px "Trebuchet MS", Verdana, sans-serif;
+	color: #000;
+	border-bottom: #FF6633 solid 2px;
+}
+
+#contenido {
+		padding:0 38px 25px 38px;
+}
+
+a {
+	color:#006600; 
+	text-decoration:none;
+}
+a:visited,active { 
+	text-decoration:none; 
+	color:#003300;
+}
+a:hover {
+	color:#000; 
+	text-decoration:underline;
+}
+#contenido p {
+	line-height:22px;
+}
+h2 {
+	font: normal 18px "Trebuchet MS", Verdana, sans-serif;
+	color: #000;
+}
+h3 {
+	font: normal 17px "Trebuchet MS", Verdana, sans-serif;
+	color: #987D7D;
+}
+#contenido h3 {
+	font: bold 14px "Trebuchet MS", Verdana, sans-serif; 
+	color:#666;
+}
+
+#contenido div img {
+	background:#efefef; 
+	border:solid 1px #cccccc; 
+	padding:3px;
+}
+#NombreSitio {
+	display:block;
+	padding: 80px 55px 100px 0px;
+	color: #808040;
+	font: bolder small-caps 22px "Trebuchet MS", Verdana, sans-serif;
+	text-align:left;
+}
+#NombreSitio .desc {
+	font-size:14px; 
+	color:#ccc; 
+	font-variant:normal; 
+	display:block
+}
+#MenuSuper ul {
+	text-align:center; 
+	display:block; 
+	float:right; 
+    width:500px;
+
+}
+#MenuSuper li {
+	display: inline;
+}
+
+#ft_btm{
+	padding:30px 30px 20px 30px;
+	text-align: left;
+
+}
+#btm_cont {
+	padding:5px 45px 30px 45px; 
+	background:url(../img/background8.jpg) no-repeat center bottom;
+	height:25px; 
+}
+#rightcontent { 
+	float:right; 
+	width:600px; 
+	padding:25px 0 0 0;
+}
+#BarraLateral { 
+	margin:0px 0px 0px -80px;
+	padding-top:25px;
+	width:190px;
+}
+
+#contenido th {
+	background:#D2E3F3;
+	padding:5px 15px 5px 15px;
+	color:#000000;
+	font-weight:bold;
+	text-align:center;
+	border-bottom:1px solid #BDDB99;
+	font-size: 16px;
+}
+#contenido td {
+	border-bottom:1px solid #D2E3F3;
+	padding:5px 15px 5px 15px;
+	border-right:1px solid #D2E3F3;
+}
+
+.texto:focus {background:#ffffff;}
+.hide {display:none;}
+
+#derecha ul, #derecha ol {padding:10px; margin:10px;}
+ol {list-style:decimal;}
+#derecha ul {list-style: square;}
+#derecha p {margin-bottom:20px;}
+#derecha li {padding:13px;}
+
+#BarraLateral ul {list-style:none; margin-bottom:15px;}
+#BarraLateral li {display:block; height:25px; border-bottom:dashed 1px #CCCCCC;}
+#BarraLateral li a {display:block; height:20px; padding:5px 5px 0 5px;}
+#BarraLateral li a:hover {background:#efefef; text-decoration:none;}
+

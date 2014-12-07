@@ -62,28 +62,12 @@
 }
 
 div #opc1{
-  	 background: url(../res/save.png) no-repeat;
+    background: url(../res/open.png) no-repeat;
+    background-size: 32px 32px;
 }
 div #opc2{
-    background: url(../res/settings.png) no-repeat;
-}
-div #opc3{
-    background: url(../res/ajustes.png) no-repeat;
-}
-div #opc4{
     background: url(../res/save.png) no-repeat;
-}
-div #opc5{
-    background: url(../res/save.png) no-repeat;
-}
-div #opc6{
- 	background: url(../res/save.png) no-repeat;
-}
-div #opc7{
- 	background: url(../res/save.png) no-repeat;
-}
-div #opc8{
- background: url(../res/save.png) no-repeat;
+    background-size: 32px 32px;
 }
 body {
     font-family: Cambria, Arial;

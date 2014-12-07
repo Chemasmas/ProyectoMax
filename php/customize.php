@@ -19,6 +19,7 @@
   		<button id="disminuir" name="disminuir"> A<sup>-</sup> </button>
   		<hr>
         <p id="texto" >Fondo</p>
+        <!--
         <select id="color_fondo">
         	<option>Color fondo..</option>
             <option value="white"> Blanco </option>
@@ -29,6 +30,8 @@
           	<option value="orange"> Naranja </option>
           	<option value="violet"> Violeta </option>
         </select>
+        -->
+        <input type="color" id="color" />
         <br>
       <p>Tipo de Fuente</p>
       <select id="fontType">

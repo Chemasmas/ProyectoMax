@@ -58,7 +58,7 @@
     </div>
 
 
-
+    <?php include "php/modal.php" ?>
     </body> 
     </html>  
    

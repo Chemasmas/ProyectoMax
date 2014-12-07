@@ -1,5 +1,6 @@
 var selected;
 var texto;
+var estilo={};
 //Funcion para el Click
 function addListeners()
 {
@@ -14,19 +15,22 @@ function addListeners()
 
 function modificadores()
 {
-    var sub=false;
+    
     var neg=false;
 
     $("#letraTamaño").val($(selected).css("font-size"));
 
     $("#subrayado").click(function(){
-        if(sub==false){
-            $(selected).css("text-decoration","underline");
-            sub=true;
-        }else{
-            $(selected).css("text-decoration","none");
-            sub=false;
-        }
+        var id=$(selected).attr("id");
+        if(reglaDefinida(id))
+            if(propiedadDefinida(id,"text-decoration"))
+                if(getPropiedadDefinida(id,"text-decoration")=="underline"){
+                    $(selected).css("text-decoration","none");
+                    agregarEstilo(id,"text-decoration","none");
+                    return;
+                }
+        $(selected).css("text-decoration","underline");
+        agregarEstilo(id,"text-decoration","underline");
     });
 
     $("#negrita").click(function(){
@@ -83,69 +87,47 @@ function modificadores()
 
 }
 
-/*
- $(document).ready(function(){
+function agregarEstilo(selector,propiedad,valor)
+{
+    if(estilo[selector]==undefined)
+    {
+        estilo[selector]={};
+        estilo[selector][propiedad]=valor;
+    }
+    
+    else{
+        estilo[selector][propiedad]=valor;        
+    }     
+}
+function reglaDefinida(selector)
+{
+    if(estilo[selector]==undefined)
+        return false;
+    
+    return true;
+}
+function propiedadDefinida(selector,propiedad)
+{
+    console.log(selector+" "+propiedad)
+    console.log(estilo[selector][propiedad]);
+    if(reglaDefinida(selector))
+    {
+        if(estilo[selector][propiedad]==undefined)
+            return false;
+        return true;
+    }
+    return false;
+}
 
-    var sub=false;
-    var neg=false;
-
-	$("#letraTamaño").val($(elem).css("font-size"));
-	//SUBRAYADO
-    $("#subrayado").click(function(){
-        //alert("subrayado");
-        if(sub==false){
-            $("#texto").css("text-decoration","underline");
-            sub=true;
-        }else{
-            $("#texto").css("text-decoration","none");
-            sub=false;
-        }
-    });
-	//NEGRITA
-    $("#negrita").click(function(){
-        //alert("subrayado");
-        if(neg==false){
-            $("#texto").css("font-weight","bold");
-            neg=true;
-        }else{
-            $("#texto").css("font-weight","normal");
-            neg=false;
-        }
-    });
-	
-	//TAMAÑO
-	
-	$("#letraTamaño").change(function(){
-			$("#texto").css("font-size", $('#letraTamaño').val() + "px");
-			$("#letraTamaño").val($("#texto").css("font-size"));
-        });
-	//AUMENTAR
-	$("#aumentar").click(function(){
-			var tamaño = $("#texto").css("font-size");
-			var newTamaño = tamaño.substring(0, tamaño.length-2);
-			newTamaño = parseInt(newTamaño);
-			$("#texto").css("font-size", (newTamaño+1));
-			$("#letraTamaño").val($("#texto").css("font-size"));
-        });
-	//DISMINUIR
-	$("#disminuir").click(function(){
-			var tamaño = $("#texto").css("font-size");
-			var newTamaño = tamaño.substring(0, tamaño.length-2);
-			$("#texto").css("font-size", (newTamaño-1));
-			$("#letraTamaño").val($("#texto").css("font-size"));
-        });
-		
-	//COLOR LETRA
-	$("#color_letra").change(function(){
-             var color_letra = $("#color_letra").val();
-             $("#texto").css({'color': color_letra});
-          });
-		  
-	//COLOR FONDO
-		  $("#color_fondo").change(function(){
-             var color_fondo = $("#color_fondo").val();
-             $("#texto").css({'background-color': color_fondo});
-          });
-	
-});
-*/
+function getPropiedadDefinida(selector,propiedad)
+{
+    console.log(selector+" "+propiedad)
+    console.log(estilo[selector][propiedad]);
+    if(reglaDefinida(selector))
+    {
+        if(estilo[selector][propiedad]==undefined)
+            return undefined;
+        return estilo[selector][propiedad];
+    }
+    return undefined;
+}
