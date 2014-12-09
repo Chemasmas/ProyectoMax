@@ -15,6 +15,7 @@ $().ready(
                             {
                                 var respuesta=eval(json);
                                 //console.info(respuesta);
+                                $("#file").empty();
                                 $("#file").append(new Option("Selecciona Una"));
                                 for(var i=0;i<respuesta.length;i++)
                                 {
@@ -38,7 +39,7 @@ $().ready(
 			});
 
 
-
+        /*
         $("#Filecancel").click(function()
         {
             $("#archivoModal").hide();
@@ -56,44 +57,38 @@ $().ready(
             $("#archivoModal").hide();
             $("#file").html("");
         });
-        
+        */
+
         $("#file").change(function(){
-                        $( "#archivoModal" ).dialog( "close" );
-                                    $("#archivoModal").hide(function(){
-                                        //console.log($("#file").val());
-                                        //console.log($("#vistaPrevia"));
-                                        var ruta=$("#file").val();
-                                        ruta=ruta.substring(3);
-                                        console.log(ruta);
-                                        $("#vistaPrevia").load(ruta,function(){
-                                            addListeners();
-                                            estilo={};
-                                        });
-                                         var html=$.ajax({
-                                            url:ruta
-                                        })
-                                        .done(function(html)
-                                        {
-                                            console.log("Aqui!!!");
-                                            htmlCargado=html;
-                                            console.log(html);
-                                        })
-                                        .fail(function()
-                                        {
-                                            alert("No obtuvo el archivo");
-                                        }).
-                                        complete(function()
-                                        {
-                                        });
-                                    });
-                                    //$("#file").html()="";
-                                });
-								
+            $( "#archivoModal" ).dialog( "close");
+            $("#archivoModal").hide(function(){
+                var ruta=$("#file").val();
+                ruta=ruta.substring(3);                
+                console.log(ruta);
+                $("#vistaPrevia").load(ruta);
+                addListeners();
+                estilo={};
+                var html=$.ajax({
+                    url:ruta
+                })
+                .done(function(html)
+                {
+                    console.log("Aqui!!!");
+                    htmlCargado=html;
+                    console.log(html);
+                })
+                .fail(function()
+                {
+                    alert("No obtuvo el archivo");
+                }).
+                complete(function()
+                {
+                 });
+        });
+    });
 		$("#estilos").change(function(){
           		var estiloSeleccionado = $("#estilos").val();
                 estiloSeleccionado += ".css";
                 $("#linkestilo").attr("href", "css/"+estiloSeleccionado);
         	});
-        
-        
 	});
