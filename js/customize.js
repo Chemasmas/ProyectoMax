@@ -4,15 +4,14 @@ var estilo={};
 //Funcion para el Click
 function addListeners()
 {
-    console.log("Colocando");
     $("#vistaPrevia > * > *").click(function(elem)
         {
-            console.error(elem.target);
+            //console.log(elem.target);
             console.log("Click");
             selected=elem.target;
-            modificadores();
         });
-    console.log("Colocado");
+    modificadores();
+    console.log("Cargado");
 }
 
 function modificadores()
