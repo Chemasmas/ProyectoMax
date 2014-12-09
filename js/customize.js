@@ -43,22 +43,28 @@ function modificadores()
 
     $("#letraTamaño").change(function(){
         var id=$(selected).attr("id");
-        $(selected).css("font-size","bold");
-        agregarEstilo(id,"font-size","bold");
+        
+        $(selected).css("font-size", $('#letraTamaño').val() + "px");
+        agregarEstilo(id,"font-size",$('#letraTamaño').val() + "px");
+        $("#letraTamaño").val($(selected).css("font-size"));
     });
 
     $("#aumentar").click(function(){
-
+            var id=$(selected).attr("id");
             var tamaño = $(selected).css("font-size");
             var newTamaño = tamaño.substring(0, tamaño.length-2);
             newTamaño = parseInt(newTamaño);
             $(selected).css("font-size", (newTamaño+1));
+            console.log("chuchita");
+            agregarEstilo(id,"font-size", newTamaño+1 + "px");
             $("#letraTamaño").val($(selected).css("font-size"));
     });
     $("#disminuir").click(function(){
+            var id=$(selected).attr("id");
             var tamaño = $(selected).css("font-size");
             var newTamaño = tamaño.substring(0, tamaño.length-2);
             $(selected).css("font-size", (newTamaño-1));
+            agregarEstilo(id,"font-size",newTamaño-1 + "px");
             $("#letraTamaño").val($(selected).css("font-size"));
     });
 
@@ -74,10 +80,12 @@ function modificadores()
     });
 
     $("#fontType").change(function(){
-        $(selected).css("font-family", $('#fontType').val());
-        $("#fontType").val($(selected).css("font-family"));
+        //$(selected).css("font-size", $('#letraTamaño').val() + "px");
+        // $("#letraTamaño").val($(selected).css("font-size"));
+        $(selected).css("font-size", $('#letraTamaño').val() + "px");
+        $("#letraTamaño").val($(selected).css("font-size"));
     });
-
+    
     $(selected).select(function(){
         selectedText = document.getSelection();
         console.log("Ok");
