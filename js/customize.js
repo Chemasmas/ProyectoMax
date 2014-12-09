@@ -34,18 +34,24 @@ function modificadores()
     });
 
     $("#negrita").click(function(){
-        if(neg==false){
-            $(selected).css("font-weight","bold");
-            neg=true;
-        }else{
-            $(selected).css("font-weight","normal");
-            neg=false;
-        }
+        //$(selected).css("font-weight","bold");
+        var id=$(selected).attr("id");
+        if(reglaDefinida(id))
+            if(propiedadDefinida(id,"font-weight"))
+                if(getPropiedadDefinida(id,"font-weight")=="bold"){
+                    $(selected).css("text-decoration","normal");
+                    agregarEstilo(id,"text-decoration","normal");
+                    return;
+                }
+        $(selected).css("text-decoration","bold");
+        agregarEstilo(id,"text-decoration","bold");
     });
 
     $("#letraTamaño").change(function(){
-            $(selected).css("font-size", $('#letraTamaño').val() + "px");
-            $("#letraTamaño").val($(selected).css("font-size"));
+            
+        var id=$(selected).attr("id");
+        $(selected).css("font-size","bold");
+        agregarEstilo(id,"font-size","bold");
     });
 
     $("#aumentar").click(function(){
