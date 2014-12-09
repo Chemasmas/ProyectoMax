@@ -39,12 +39,12 @@ function modificadores()
         if(reglaDefinida(id))
             if(propiedadDefinida(id,"font-weight"))
                 if(getPropiedadDefinida(id,"font-weight")=="bold"){
-                    $(selected).css("text-decoration","normal");
-                    agregarEstilo(id,"text-decoration","normal");
+                    $(selected).css("font-weight","normal");
+                    agregarEstilo(id,"font-weight","normal");
                     return;
                 }
-        $(selected).css("text-decoration","bold");
-        agregarEstilo(id,"text-decoration","bold");
+        $(selected).css("font-weight","bold");
+        agregarEstilo(id,"font-weight","bold");
     });
 
     $("#letraTamaño").change(function(){
