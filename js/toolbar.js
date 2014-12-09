@@ -89,6 +89,12 @@ $().ready(
                                     });
                                     //$("#file").html()="";
                                 });
+								
+		$("#estilos").change(function(){
+          		var estiloSeleccionado = $("#estilos").val();
+                estiloSeleccionado += ".css";
+                $("#linkestilo").attr("href", "css/"+estiloSeleccionado);
+        	});
         
         
 	});

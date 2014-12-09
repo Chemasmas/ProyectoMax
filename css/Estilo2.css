@@ -1,0 +1,89 @@
+div body{
+	background-color: #EEE;
+}
+
+.contenedor{
+	background-color: #fff;
+	width: 800px;
+	/*border: 2px black solid;*/
+	padding: 1px;
+	margin: -8px auto;
+	box-shadow: 1px 1px 1px black;
+}
+
+.minitron{
+	background-image: url('../img/background2.jpg');
+	/*background-size: 800px;*/
+	/*background-color: #F18903;*/
+	color: white;
+	height: 160px;
+	width: auto;
+	padding: 20px;
+	margin: 0 auto;
+	
+	/*border: 1px blue solid;*/
+}
+.titulo-minitron{
+	font-size: 50px;
+	font-family: 'Lato', sans-serif;
+	color: #FFF;
+	text-shadow: 1px 1px #80D1FF;
+	text-align: right;
+	padding: 10px;
+	margin: 40px  auto 10px auto;
+}
+
+.jumbotron{
+	height: 200px;
+	width: auto;
+	border: 1px green solid;
+}
+.contenido{
+	padding: 20px;
+	width: auto;
+	text-align: justify;
+}
+.titulo{
+	font-size: 40px;
+	font-style: bold;
+    font-family: 'Lato', sans-serif;
+}
+.subtitulo{
+	font-size: 32px;
+	font-style: bold;
+	font-family: Arial;
+}
+.fechaPublicacion{
+	color: #94B8DB;
+	font-size: 14px;
+	font-style: italic;
+	font-family: Arial;
+	text-align: right;
+}
+.footer{
+	color: #EEE;
+	font-size: 14px;
+	font-family: Arial;
+}
+
+.footer:hover{
+	color: #AAA;
+	font-size: 14px;
+	font-family: Arial;
+}
+
+p{
+	font-family: Arial;
+}
+
+hr {
+	border: 1px solid #EEE; 
+	height: 0;
+}
+
+code{
+	background-color: #BBB;
+	color: #000;
+	
+	font-family: Arial;
+}
