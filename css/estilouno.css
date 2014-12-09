@@ -3,11 +3,11 @@
     padding:0px
 }
 
-header,section,footer,aside,nav,article,figure,figcaption,hgroup {
+.header_max, .section_max, .footer_max, .aside_max, .nav_max , .article_max {
     display: block;
 }
 
-h1 {
+.h1_max {
   position: relative;
   margin-left: -22px;
   margin-right: -22px;
@@ -20,7 +20,7 @@ h1 {
   text-shadow:3px 3px 3px #555555;
 }
 
-h1:before, h1:after {
+.h1_max:before, .h1_max:after {
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -29,7 +29,7 @@ h1:before, h1:after {
   border-left: 6px solid transparent;
 }
 
-h1:before {
+.h1_max:before {
   border-top: 6px solid #555;
   border-right: 6px solid transparent;
   border-left: none;
@@ -37,7 +37,7 @@ h1:before {
   right: 0;
   bottom: -6px;
 }
-h2 {
+.h2_max {
     margin: 5px;
     margin-bottom: 30px;
     position: relative;
@@ -51,7 +51,7 @@ h2 {
     font-family: 'Muli', sans-serif;
 }
 
-body {
+.body_max {
     background: #666666;
     text-align: center
 }
@@ -63,17 +63,17 @@ body {
     background: #777777
 }
 
-nav,
-nav ul,
-nav ul li,
-nav ul li a {
+.nav_max,
+.nav_max ul,
+.nav_max ul li,
+.nav_max ul li a {
   list-style: none;
   line-height: 1;
   display: block;
   position: relative;
   box-sizing: border-box;
 }
-nav {
+.nav_max {
   margin-top: 5px;
   border-bottom: 3px solid #333333;
   padding: 0 5px;
@@ -83,8 +83,8 @@ nav {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-nav:after,
-nav ul:after {
+.nav_max:after,
+.nav_max ul:after {
   content: ".";
   display: block;
   clear: both;
@@ -92,46 +92,46 @@ nav ul:after {
   line-height: 0;
   height: 0;
 }
-nav ul li {
+.nav_max ul li {
   display: inline-block;
 }
-nav.align-right ul li {
+.nav_max.align-right ul li {
   float: right;
 }
-nav.align-center ul {
+.nav_max.align-center ul {
   text-align: center;
 }
-nav ul li a {
+.nav_max ul li a {
   font-size: 14px;
   padding: 15px;
   text-decoration: none;
   color: #0e83cd;
 }
-nav ul li:hover a,
-nav ul li a:hover,
-nav ul li.active a {
+.nav_max ul li:hover a,
+.nav_max ul li a:hover,
+.nav_max ul li.active a {
   color: #333333;
 }
 @media all and (max-width: 640px) {
-  nav {
+  .nav_max {
     padding: 0;
     border-radius: 0;
     border: 0;
   }
-  nav ul li,
-  nav.align-center,
-  nav.align-right {
+  .nav_max ul li,
+  .nav_max.align-center,
+  .nav_max.align-right {
     display: block;
   }
 }
 
-section {
+.section_max {
     float: left;
     width: 660px;
     margin: 20px
 }
 
-aside {
+.aside_max {
     float: left;
     width: 220px;
     margin: 20px 0px;
@@ -146,22 +146,22 @@ aside {
     border-top: 3px solid #999999
 }
 
-article {
+.article_max {
     background: #eeeeee;
     border: 1px solid #999999;
     padding: 20px;
     margin-bottom: 15px;
 }
 
-article footer {
+.article_max .footer_max {
     text-align: right;
 }
 
-figcaption {
+.figcaption_max {
     font: italic 14px verdana;
 }
 
-p {
+.p_max {
     font: 14px Arial;
     margin-bottom: 30px;
 }
