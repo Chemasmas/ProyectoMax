@@ -3,7 +3,6 @@ var htmlCargado;
 $().ready(
 	function()
 	{
-		//OpcionUno Cargar Archivo
 		$("#opc1").click(
 			function()
 			{

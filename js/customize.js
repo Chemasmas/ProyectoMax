@@ -6,6 +6,7 @@ function addListeners()
 {
     $("#vistaPrevia > * > *").click(function(elem)
         {
+            console.log("ok");
             selected=elem.target;
         });
     modificadores();

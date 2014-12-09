@@ -8,6 +8,7 @@
   <input type="color" id="color_letra">
 </div>
 <div>
+  <p>Tamaño de letra</p>
   <input id="letraTamaño" name="letraTamaño" type="text" size="5" maxlength="3"> 
   <button id="aumentar" name="aumentar"> A<sup>+</sup> </button>
   <button id="disminuir" name="disminuir"> A<sup>-</sup> </button>
