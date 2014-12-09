@@ -14,13 +14,13 @@ $().ready(
                             .done(function(json)
                             {
                                 var respuesta=eval(json);
-                                //console.info(respuesta);
+                                console.info(respuesta);
                                 $("#file").append(new Option("Selecciona Una"));
                                 for(var i=0;i<respuesta.length;i++)
                                 {
                                     $("#file").append(new Option(respuesta[i][1],respuesta[i][0]))
                                 }
-                                //console.info(json);
+                                console.info(json);
                             })
                             .fail(function()
                             {
@@ -28,6 +28,7 @@ $().ready(
                             }).
                             complete(function()
                             {
+                               
                 });
                 $("#archivoModal").dialog({});
 			});
@@ -60,8 +61,8 @@ $().ready(
         $("#file").change(function(){
                         $( "#archivoModal" ).dialog( "close" );
                                     $("#archivoModal").hide(function(){
-                                        //console.log($("#file").val());
-                                        //console.log($("#vistaPrevia"));
+                                        console.log($("#file").val());
+                                        console.log($("#vistaPrevia"));
                                         var ruta=$("#file").val();
                                         ruta=ruta.substring(3);
                                         console.log(ruta);
