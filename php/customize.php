@@ -1,41 +1,24 @@
-<hr>
-    <p>Tipo de letra</p>
-  		<input id="negrita" title="Negrita" name="negrita" type="button" value="N">
-  		<input id="subrayado" title="Subrayado" name="subrayado" type="button" value="S">
-        <br/><br/>
-        <select id="color_letra">
-        	<option>Color letra..</option>
-            <option value="white"> Blanco </option>
-          	<option value="black"> Negro </option>
-          	<option value="blue"> Azul </option>
-          	<option value="red"> Rojo </option>
-          	<option value="green"> Verde </option>
-          	<option value="orange"> Naranja </option>
-          	<option value="violet"> Violeta </option>
-        </select>
-  <br/><br/>
-  		<input id="letraTamaño" name="letraTamaño" type="text" size="5" maxlength="3"> 
-  		<button id="aumentar" name="aumentar"> A<sup>+</sup> </button>
-  		<button id="disminuir" name="disminuir"> A<sup>-</sup> </button>
-  		<hr>
-        <p id="texto" >Fondo</p>
-        <!--
-        <select id="color_fondo">
-        	<option>Color fondo..</option>
-            <option value="white"> Blanco </option>
-          	<option value="black"> Negro </option>
-          	<option value="blue"> Azul </option>
-         	<option value="red"> Rojo </option>
-          	<option value="green"> Verde </option>
-          	<option value="orange"> Naranja </option>
-          	<option value="violet"> Violeta </option>
-        </select>
-        -->
-        <input type="color" id="color" />
-        <br>
-      <p>Tipo de Fuente</p>
-      <select id="fontType">
-          <option>Selecciona una fuente</option>
-          <option value="pro"> Pro </option>
-          <option value="arial"> Arial </option>
-      </select>
+<div>
+  <p>Tipo de letra</p>
+  <input id="negrita" title="Negrita" name="negrita" type="button" value="N">
+  <input id="subrayado" title="Subrayado" name="subrayado" type="button" value="S">
+</div>
+<div>
+  <p>Color de letra</p>
+  <input type="color" id="color_letra">
+</div>
+<div>
+  <input id="letraTamaño" name="letraTamaño" type="text" size="5" maxlength="3"> 
+  <button id="aumentar" name="aumentar"> A<sup>+</sup> </button>
+  <button id="disminuir" name="disminuir"> A<sup>-</sup> </button>
+</div>
+<div>
+  <p>Fondo</p>
+  <input type="color" id="color" />
+  <p>Tipo de Fuente</p>
+  <select id="fontType">
+    <option>Selecciona una fuente</option>
+    <option value="pro"> Pro </option>
+    <option value="arial"> Arial </option>
+  </select>
+</div>

@@ -51,17 +51,10 @@
 				Colonia Santa Fe Cuajimalpa. Delegación Cuajimalpa de Morelos, Tel. +52 (55) 5814-6550 y 51. C.P. 05300, México, D.F. http://dccd.cua.uam.mx</p>
                 </td>
                 <td>  <img src="res/pie.png"></td>
-                
                 </tr>
                 </table>
             </footer>
     </div>
-
-
     <?php include "php/modal.php" ?>
     </body> 
-    </html>  
-   
-
-
-
+</html> 
