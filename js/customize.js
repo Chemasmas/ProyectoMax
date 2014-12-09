@@ -6,7 +6,6 @@ function addListeners()
 {
     $("#vistaPrevia > * > *").click(function(elem)
         {
-            //console.log(elem.target);
             selected=elem.target;
         });
     modificadores();
@@ -15,11 +14,8 @@ function addListeners()
 
 function modificadores()
 {
-    
     var neg=false;
-
     $("#letraTamaño").val($(selected).css("font-size"));
-
     $("#subrayado").click(function(){
         var id=$(selected).attr("id");
         if(reglaDefinida(id))
@@ -32,9 +28,7 @@ function modificadores()
         $(selected).css("text-decoration","underline");
         agregarEstilo(id,"text-decoration","underline");
     });
-
     $("#negrita").click(function(){
-        //$(selected).css("font-weight","bold");
         var id=$(selected).attr("id");
         if(reglaDefinida(id))
             if(propiedadDefinida(id,"font-weight"))
@@ -48,7 +42,6 @@ function modificadores()
     });
 
     $("#letraTamaño").change(function(){
-            
         var id=$(selected).attr("id");
         $(selected).css("font-size","bold");
         agregarEstilo(id,"font-size","bold");
