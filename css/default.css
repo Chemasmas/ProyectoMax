@@ -1,0 +1,40 @@
+
+.header_max, .section_max, .footer_max, .aside_max, .nav_max , .article_max {
+    display: block;
+}
+.h1_max, .h2_max {
+  position: relative;
+  padding: 15px;
+  background: #ffffff;
+}
+#agrupar {
+    text-align: left;
+}
+.nav_max,
+.nav_max ul,
+.nav_max ul li,
+.nav_max ul li a {
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+}
+.nav_max ul li {
+  display: inline-block;
+}
+.nav_max ul li a {
+  font-size: 14px;
+  padding: 15px;
+  text-decoration: none;
+}
+.section_max {
+    float: left;
+    width: 660px;
+    margin: 20px
+}
+.aside_max {
+    float: left;
+}
+#pie {
+    clear: both;
+}
