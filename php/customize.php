@@ -18,15 +18,22 @@
   <input type="color" id="color" />
   <p>Tipo de Fuente</p>
   <select id="fontType">
-    <option>Selecciona una fuente</option>
+    <option>Fuente</option>
     <option value="pro"> Pro </option>
     <option value="arial"> Arial </option>
   </select>
 </div>
 <div>
   <p>Aliniado de texto</p>
-    <input type="button" id="btn_center" name="btn_center" value="center" />
-    <input type="button" id="btn_right" name="btn_right" value="right"/>
-    <input type="button" id="btn_left" name="btn_left" value="left"/>
-    <input type="button" id="btn_justify" name="btn_justify" value="justufy"/>  
+    <input type="button" id="btn_center"  name="center" onclick="alin(btn_center);" />
+    <input type="button" id="btn_right" name="btn_right" value="right" onclick="alin(btn_right);"/>
+    <input type="button" id="btn_left" name="btn_left" value="left" onclick="alin(btn_left);"/>
+    <input type="button" id="btn_justify" name="btn_justify" value="justufy" onclick="alin(btn_justify);"/>  
+</div>
+<div>
+  <p>Aliniado de texto</p>
+    <input type="button" id="btn_circle" name="btn_circle" value="circle" onclick="listar(btn_circle);"/>
+    <input type="button" id="btn_square" name="btn_square" value="square" onclick="listar(btn_square);"/>
+    <input type="button" id="btn_roman" name="btn_roman" value="upper_roman" onclick="listar(btn_roman);"/>
+    <input type="button" id="btn_alpha" name="btn_alpha" value="lower_alpha" onclick="listar(btn_alpha);"/>  
 </div>

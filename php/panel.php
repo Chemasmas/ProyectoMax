@@ -12,5 +12,7 @@
         <div id="texto">
             <?php include "customize.php" ?>
         </div>
-    <div id="tabs-2">                
-</div>
+    <div id="tabs-2">
+            <?php include "imagen.php" ?>
+        
+    </div>

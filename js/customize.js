@@ -1,4 +1,5 @@
 var selected;
+var selectedant;
 var texto;
 var estilo={};
 //Funcion para el Click
@@ -7,14 +8,17 @@ function addListeners()
     $("#vistaPrevia > * > *").click(function(elem)
         {
             console.log("ok");
+            selectedant=selected;
+             $(selectedant).css("border-style","none");
             selected=elem.target;
+            $(selected).css("border-style","dotted");
+            $(selected).css("border-color","red");
         });
     modificadores();
     console.log("Cargado");
 }
 
-function modificadores()
-{
+function modificadores(){
     var neg=false;
     $("#letraTamaño").val($(selected).css("font-size"));
     $("#subrayado").click(function(){
@@ -90,36 +94,14 @@ function modificadores()
         agregarEstilo(id,"font-family",$('#fontType').val());
         $("#fontType").val($(selected).css("font-family"));
     });
-    
-    $("#btn_center").click(function aliniado(){
-        //console.log(boton.value);
+    $("#btn_quitar").click(function(){
+        console.log("btn_quitar");
         var id=$(selected).attr("id");
-        $(selected).css("text-align","center");
-        agregarEstilo(id,"text_align","center");
+        $(selected).css("background-image", "none");
+        agregarEstilo(id,"background-image","none");
         
     });
-    $("#btn_right").click(function aliniado(){
-        //console.log(boton.value);
-        var id=$(selected).attr("id");
-        $(selected).css("text-align","right");
-        agregarEstilo(id,"text_align","right");
-        
-    });
-    $("#btn_left").click(function aliniado(){
-        //console.log(boton.value);
-        var id=$(selected).attr("id");
-        $(selected).css("text-align","left");
-        agregarEstilo(id,"text_align","left");
-        
-    });
-    $("#btn_justify").click(function aliniado(){
-        //console.log(boton.value);
-        var id=$(selected).attr("id");
-        $(selected).css("text-align","justify");
-        agregarEstilo(id,"text_align","justify");
-        
-    });
-    
+   
     
     
     $(selected).select(function(){
@@ -129,7 +111,19 @@ function modificadores()
     });
 
 }
-
+function alin(idboton){
+        //console.log(idboton.value);
+        var id=$(selected).attr("id");
+        $(selected).css("text-align",idboton.name);
+        agregarEstilo(id,"text_align",idboton.name);
+    }
+ function listar(idboton){
+        //console.log(boton.value);
+        var id=$(selected).attr("id");
+        $(selected).css("list-style-type",idboton.value);
+        agregarEstilo(id,"list-style-type",idboton.value);
+        
+    }
 function agregarEstilo(selector,propiedad,valor)
 {
     if(estilo[selector]==undefined)
