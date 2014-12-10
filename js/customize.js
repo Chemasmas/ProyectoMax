@@ -56,7 +56,7 @@ function modificadores()
             var newTamaño = tamaño.substring(0, tamaño.length-2);
             newTamaño = parseInt(newTamaño);
             $(selected).css("font-size", (newTamaño+1));
-            console.log("chuchita");
+            
             agregarEstilo(id,"font-size", newTamaño+1 + "px");
             $("#letraTamaño").val($(selected).css("font-size"));
     });
@@ -70,22 +70,57 @@ function modificadores()
     });
 
     $("#color_letra").change(function(){
+            var id=$(selected).attr("id");
              var color_letra = $("#color_letra").val();
              $(selected).css({'color': color_letra});
+            agregarEstilo(id,"color",color_letra);
           });
           
     
     $("#color_fondo").change(function(){
-             var color_fondo = $("#color_fondo").val();
-             $(selected).css({'background-color': color_fondo});
+            var id=$(selected).attr("id");
+            var color_fondo = $("#color_fondo").val();
+            $(selected).css({'background-color': color_fondo});
+            agregarEstilo(id,"background-color",color_fondo);
     });
 
     $("#fontType").change(function(){
-        //$(selected).css("font-size", $('#letraTamaño').val() + "px");
-        // $("#letraTamaño").val($(selected).css("font-size"));
-        $(selected).css("font-size", $('#letraTamaño').val() + "px");
-        $("#letraTamaño").val($(selected).css("font-size"));
+        var id=$(selected).attr("id");
+        $(selected).css("font-family", $('#fontType').val());
+        agregarEstilo(id,"font-family",$('#fontType').val());
+        $("#fontType").val($(selected).css("font-family"));
     });
+    
+    $("#btn_center").click(function aliniado(){
+        //console.log(boton.value);
+        var id=$(selected).attr("id");
+        $(selected).css("text-align","center");
+        agregarEstilo(id,"text_align","center");
+        
+    });
+    $("#btn_right").click(function aliniado(){
+        //console.log(boton.value);
+        var id=$(selected).attr("id");
+        $(selected).css("text-align","right");
+        agregarEstilo(id,"text_align","right");
+        
+    });
+    $("#btn_left").click(function aliniado(){
+        //console.log(boton.value);
+        var id=$(selected).attr("id");
+        $(selected).css("text-align","left");
+        agregarEstilo(id,"text_align","left");
+        
+    });
+    $("#btn_justify").click(function aliniado(){
+        //console.log(boton.value);
+        var id=$(selected).attr("id");
+        $(selected).css("text-align","justify");
+        agregarEstilo(id,"text_align","justify");
+        
+    });
+    
+    
     
     $(selected).select(function(){
         selectedText = document.getSelection();

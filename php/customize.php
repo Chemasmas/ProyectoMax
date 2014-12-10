@@ -23,3 +23,10 @@
     <option value="arial"> Arial </option>
   </select>
 </div>
+<div>
+  <p>Aliniado de texto</p>
+    <input type="button" id="btn_center" name="btn_center" value="center" />
+    <input type="button" id="btn_right" name="btn_right" value="right"/>
+    <input type="button" id="btn_left" name="btn_left" value="left"/>
+    <input type="button" id="btn_justify" name="btn_justify" value="justufy"/>  
+</div>
