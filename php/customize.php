@@ -15,7 +15,7 @@
 </div>
 <div>
   <p>Fondo</p>
-  <input type="color" id="color" />
+  <input type="color" id="color_fondo" />
   <p>Tipo de Fuente</p>
   <select id="fontType">
     <option>Fuente</option>

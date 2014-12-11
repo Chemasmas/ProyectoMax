@@ -3,4 +3,5 @@ $(document).ready(function(){
 		$("#tools").tabs();
         $("#archivoModal").hide();
         $( document ).tooltip();
+        
 });

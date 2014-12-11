@@ -1,4 +1,5 @@
 var htmlCargado;
+var htmlRuta;
 
 $().ready(
 	function()
@@ -8,12 +9,14 @@ $().ready(
 			{
 				console.log("La carga del Archivo");
                 var doc=$.ajax({
-                            url:"php/listadoArchivos.php"
+                            url:"php/listadoArchivos.php",
+                            dataType:"json"
                         })
                             .done(function(json)
                             {
                                 var respuesta=eval(json);
                                 console.info(respuesta);
+                                $("#file").empty();
                                 $("#file").append(new Option("Selecciona Una"));
                                 for(var i=0;i<respuesta.length;i++)
                                 {
@@ -34,7 +37,35 @@ $().ready(
 		$("#opc2").click(
 			function()
 			{
-				alert("Esta es la opcion 2");
+                if ($("qsx").length){
+                    $("#vistaPrevia").prepend("<qsx id='head'>");
+                    $("#head").append($("#vistaPrevia>title"));
+                    $("#head").append($("#vistaPrevia>link"));
+
+                    $("#head").append($("<link id='cssCustom.css' href='css/custom.css' rel='stylesheet'>"));
+
+                    $("#head").append($("#vistaPrevia>script"));
+                    $("#head").append($("#vistaPrevia>meta"));
+                }
+
+                var info={};
+                info.html=$("#vistaPrevia").html();
+                info.css=estilo;
+                //Estas rutas deben de ser Revisadas
+                //Posiblemente la var php puede ayudar en eso.
+                info.rutaH=htmlRuta;
+                info.rutaC="css/custom.css";
+                //
+				var doc=$.ajax({
+                    type:"POST",
+                    url:"php/fileCreator.php",
+                    data: info,
+                    dataType: "text"
+                })
+                .done(function(resp)
+                    {
+                        console.log(resp);
+                    });
 			});
 
 
@@ -67,6 +98,7 @@ $().ready(
                                         console.log(ruta);
                                         $("#vistaPrevia").load(ruta,function(){
                                             addListeners();
+                                            htmlRuta=ruta;
                                             estilo={};
                                         });
                                          var html=$.ajax({
@@ -97,3 +129,5 @@ $().ready(
         
         
 	});
+
+
