@@ -22,7 +22,7 @@ $().ready(
                                 {
                                     $("#file").append(new Option(respuesta[i][1],respuesta[i][0]))
                                 }
-                                console.info(json);
+                                //console.info(json);
                             })
                             .fail(function()
                             {
@@ -37,16 +37,14 @@ $().ready(
 		$("#opc2").click(
 			function()
 			{
-                if ($("qsx").length){
-                    $("#vistaPrevia").prepend("<qsx id='head'>");
-                    $("#head").append($("#vistaPrevia>title"));
-                    $("#head").append($("#vistaPrevia>link"));
+               
+                $("#head").append($("#vistaPrevia>title"));
+                $("#head").append($("#vistaPrevia>link"));
 
-                    $("#head").append($("<link id='cssCustom.css' href='css/custom.css' rel='stylesheet'>"));
+                $("#head").append($("<link id='cssCustom.css' href='css/custom.css' rel='stylesheet'>"));
 
-                    $("#head").append($("#vistaPrevia>script"));
-                    $("#head").append($("#vistaPrevia>meta"));
-                }
+                $("#head").append($("#vistaPrevia>script"));
+                $("#head").append($("#vistaPrevia>meta"));
 
                 var info={};
                 info.html=$("#vistaPrevia").html();
@@ -100,6 +98,7 @@ $().ready(
                                             addListeners();
                                             htmlRuta=ruta;
                                             estilo={};
+                                            $("#vistaPrevia").prepend("<qsx id='head'>");
                                         });
                                          var html=$.ajax({
                                             url:ruta

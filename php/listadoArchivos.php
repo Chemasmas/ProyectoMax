@@ -1,6 +1,4 @@
 <?php
-
-//Este
 /*
 require_once "ftp.php";
 
@@ -12,11 +10,14 @@ json_encode($res);
 echo json_encode($res);
 */
 
-
-
 //Esta es la funcion de Listado de Directorio que usabamos antes de la entrega de la gente de sesiones.
-function listado($dir="../html/")
+function listado($dir)
 {
+    //dado que el directorio sigue una estructura
+    //  dir
+    //   |---HTML
+    //   |---CSS
+    //   |---etc...
     $directorio = opendir($dir); //ruta actual
     $res=array();
     $cnt=0;
@@ -25,7 +26,6 @@ function listado($dir="../html/")
 
         if (is_dir($archivo))//No nos interesan los Directorios
         {
-            //echo "[".$archivo . "]<br />"; //de ser un directorio lo envolvemos entre corchetes
         }
         else
         {
@@ -42,11 +42,12 @@ function listado($dir="../html/")
 //Esta llamada debe de ser modificada para evitar listar directorios no validos
 if(isset($_SESSION["carpeta"]))
 {
-    listado($_SESSION["carpeta"]);
+    listado($_SESSION["carpeta"]."/html/");
 }
 else
 {
-    listado();
+    //Para pruebas
+    listado("../html/");
 }
 
 ?>
