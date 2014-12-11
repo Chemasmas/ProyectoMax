@@ -8,6 +8,8 @@
             <option id="default">Default</option>
             <option id="estilo1">Estilo1</option>
             <option id="estilo2">Estilo2</option>
+            <option id="style1">style1</option>
+            <option id="style2">style2</option>
         </optgroup>
     </select>
 </div>
