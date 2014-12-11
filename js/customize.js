@@ -102,7 +102,12 @@ function modificadores(){
         
     });
    
-    
+    $("#btn_aplicar").click(function (){
+        console.log($("#chooserImg").val());
+        var id=$(selected).attr("id");
+        //$(selected).css("background-image", "url('../img/"+$("#chooserImg").val()+"')");
+        $(selected).css("background-image", "url('../img/background3')");
+    });
     
     $(selected).select(function(){
         selectedText = document.getSelection();
@@ -120,8 +125,8 @@ function alin(idboton){
  function listar(idboton){
         //console.log(boton.value);
         var id=$(selected).attr("id");
-        $(selected).css("list-style-type",idboton.value);
-        agregarEstilo(id,"list-style-type",idboton.value);
+        $(selected).css("list-style-type",idboton.name);
+        agregarEstilo(id,"list-style-type",idboton.name);
         
     }
 function agregarEstilo(selector,propiedad,valor)
@@ -155,9 +160,7 @@ function propiedadDefinida(selector,propiedad)
     }
     return false;
 }
-
-function getPropiedadDefinida(selector,propiedad)
-{
+function getPropiedadDefinida(selector,propiedad){
     console.log(selector+" "+propiedad)
     console.log(estilo[selector][propiedad]);
     if(reglaDefinida(selector))

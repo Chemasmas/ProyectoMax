@@ -25,15 +25,16 @@
 </div>
 <div>
   <p>Aliniado de texto</p>
+    
+    <input type="button" id="btn_right" name="right" onclick="alin(btn_right);"/>
+    <input type="button" id="btn_justify" name="justify" onclick="alin(btn_justify);"/>  
+    <input type="button" id="btn_left" name="left" onclick="alin(btn_left);"/>
     <input type="button" id="btn_center"  name="center" onclick="alin(btn_center);" />
-    <input type="button" id="btn_right" name="btn_right" value="right" onclick="alin(btn_right);"/>
-    <input type="button" id="btn_left" name="btn_left" value="left" onclick="alin(btn_left);"/>
-    <input type="button" id="btn_justify" name="btn_justify" value="justufy" onclick="alin(btn_justify);"/>  
+   
 </div>
 <div>
   <p>Aliniado de texto</p>
-    <input type="button" id="btn_circle" name="btn_circle" value="circle" onclick="listar(btn_circle);"/>
-    <input type="button" id="btn_square" name="btn_square" value="square" onclick="listar(btn_square);"/>
-    <input type="button" id="btn_roman" name="btn_roman" value="upper_roman" onclick="listar(btn_roman);"/>
-    <input type="button" id="btn_alpha" name="btn_alpha" value="lower_alpha" onclick="listar(btn_alpha);"/>  
+    <input type="button" id="btn_circle" name="circle" onclick="listar(btn_circle);"/>
+    <input type="button" id="btn_square" name="square" onclick="listar(btn_square);"/>
+    <input type="button" id="btn_alpha" name="lower_alpha" onclick="listar(btn_alpha);"/>  
 </div>

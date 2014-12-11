@@ -65,10 +65,58 @@
 #btn_center{
     width: 32px;
     height: 32px;
-    background: url(../res/text24.png) no-repeat;
+    background: url(../res/center.png) no-repeat;
     background-size: 25px 25px;
     background-position: center;
-    
+}
+#btn_justify{
+    width: 32px;
+    height: 32px;
+    background: url(../res/justify.png) no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+#btn_right{
+    width: 32px;
+    height: 32px;
+    background: url(../res/right.png) no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+#btn_left{
+    width: 32px;
+    height: 32px;
+    background: url(../res/left.png) no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+#btn_circle{
+    width: 32px;
+    height: 32px;
+    background: url(../res/circle.png) no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+#btn_square{
+    width: 32px;
+    height: 32px;
+    background: url(../res/square.png) no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+#btn_roman{
+    width: 32px;
+    height: 32px;
+    background: url(../res/roman.png) no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+}
+#btn_alpha{
+    width: 32px;
+    height: 32px;
+    background: url(../res/numbered.png) no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
 }
 
 div #opc1{
