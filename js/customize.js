@@ -103,10 +103,12 @@ function modificadores(){
     });
    
     $("#btn_aplicar").click(function (){
-        console.log($("#chooserImg").val());
         var id=$(selected).attr("id");
-        //$(selected).css("background-image", "url('../img/"+$("#chooserImg").val()+"')");
-        $(selected).css("background-image", "url('../img/background3')");
+        //$(selected).attr("href","url('../img/background3.jpg')");
+        $(selected).css("background-image", "url('img/"+$("#chooserImg").val()+"')");
+        $(selected).css("background-size", $("#num_ancho").val()+"px "+ $("#num_alto").val()+"px");
+        agregarEstilo(id,"background-image", "url('img/"+$("#chooserImg").val()+"')");
+        agregarEstilo("background-size", $("#num_ancho").val()+"px "+ $("#num_alto").val()+"px");
     });
     
     $(selected).select(function(){
