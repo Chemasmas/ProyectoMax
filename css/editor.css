@@ -127,6 +127,18 @@ div #opc2{
     background: url(../res/save.png) no-repeat;
     background-size: 32px 32px;
 }
+#estiloE{
+    background: url(../res/estilo.png) no-repeat;
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+}
+#imagenE{
+    background: url(../res/imagen.png) no-repeat;
+    background-size: 32px 32px;
+    height: 32px;
+    width: 32px;
+}
 body {
     font-family: Cambria, Arial;
 }
