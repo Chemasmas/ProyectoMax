@@ -37,14 +37,14 @@ $().ready(
 		$("#opc2").click(
 			function()
 			{
+                $("#body").append($("#vistaPrevia>*"));
                
-                $("#head").append($("#vistaPrevia>title"));
-                $("#head").append($("#vistaPrevia>link"));
+                $("#head").append($("#body>title"));
+                $("#head").append($("#body>link"));
+                $("#head").append($("#body>script"));
+                $("#head").append($("#body>meta"));
 
-                $("#head").append($("<link id='cssCustom.css' href='css/custom.css' rel='stylesheet'>"));
-
-                $("#head").append($("#vistaPrevia>script"));
-                $("#head").append($("#vistaPrevia>meta"));
+                $("#vistaPrevia").prepend($("#head"));               
 
                 var info={};
                 info.html=$("#vistaPrevia").html();
@@ -99,6 +99,8 @@ $().ready(
                                             htmlRuta=ruta;
                                             estilo={};
                                             $("#vistaPrevia").prepend("<qsx id='head'>");
+                                            $("#head").append($("<link id='cssCustom.css' href='css/custom.css' rel='stylesheet'>"));
+                                            $("#vistaPrevia").prepend("<wdc id='body'>");
                                         });
                                          var html=$.ajax({
                                             url:ruta

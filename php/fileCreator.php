@@ -1,5 +1,6 @@
 <?php
 
+	$respuesta; //Varianble para el mensaje de vuelta
 	//print_r($_POST);
 	//Estos dos siempre son enviados
 	
@@ -12,36 +13,59 @@
 	//estos 3 siempre son enviados 
 	$html="<html>".$_POST['html']."</html>";	//El Archivo HTML
 	//debo de concatenar a la ruta un ../ para llegar a la carpeta del usuario
-	$rutaHTML="../".$_POST['rutaH'];	//La ruta al archivo
+	$rutaHTML=$_POST['rutaH'];	//La ruta al archivo
 	$rutaCSS=$_POST['rutaC'];	//La ruta al nuevo archivo de css
 
 	//cambio mi etiqueta hechiza por el head correspondiente
 	$html=str_replace("qsx","head",$html);
+	$html=str_replace("wdc","body",$html);
 
-	//echo $html;	
 
-	echo getcwd() . "\n";
-	
-	if(file_exists ($rutaHTML))
+	//Para abrir desde la carpeta del archivo
+	if(isset($_SESSION["carpeta"]))
 	{
-		echo "Existe ".$rutaHTML;	
+    	$rutaHTML=$_SESSION["carpeta"]."/".$rutaHTML;
+
 	}
 	else
 	{
-		echo "No existe ".$rutaHTML;
+    	$rutaHTML="../".$rutaHTML;
+	}
+	// Lo mismo para la ruta del css
+	if(isset($_SESSION["carpeta"]))
+	{
+    	$rutaCSS=$_SESSION["carpeta"]."/".$rutaCSS;
+	}
+	else
+	{
+    	$rutaCSS="../".$rutaCSS;
+	}
+
+	//echo $html;	
+
+	//echo getcwd() . "\n";
+	//El archivo existe y se puede escribir
+	if (is_writable($rutaHTML)) 
+	{
+		//echo "Existe ".$rutaHTML;	
+		$ahtml=fopen($rutaHTML, "w");
+		fwrite($ahtml, $html);
+		fclose($ahtml);
+		$respuesta['html']="No se pudo guardar el archivo";
+	}
+	else
+	{
+		//echo "No existe ".$rutaHTML;
+		$respuesta['html']="Archivo HTML Guardado Exitosamente";
 	}
 
 	// Si nos mandaron el arreglo de estilo, habra que buscar si el archivo existe
 	if(isset($_POST['css']))
 	{
-		//echo "enviado";
-		//Debo de Verificar si existe el archivo de custom.css
-	}
-	else
-	{
-		//echo "NO enviado";
-		//solo debo de sobre escribir el archivo de html
-
+		//Lo abrire con el modo a
+		$deco=$_POST['css'];
+		
+		
 	}
 		
 ?>
