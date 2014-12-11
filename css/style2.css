@@ -1,0 +1,246 @@
+.claro {
+		clear:both;
+}
+
+#envolver {
+		width:1024px; 
+		margin:auto; 
+		font-family: 'Open Sans', sans-serif;
+		/*border-top: solid 8px #F29722;*/
+}
+
+#titulo-encabezado{
+	width: 100%;
+	
+}
+
+#titulo-encabezado h1{
+    font-size:45px; 
+	font-weight:bolder; 
+	border-bottom:5px solid #ccc; 
+	margin-bottom:5px;
+  }
+
+a {
+	color:#006600; 
+	text-decoration:none;
+}
+a:visited,active { 
+	text-decoration:none; 
+	color:#003300;
+}
+a:hover {
+	color:#000; 
+	text-decoration:underline;
+}
+#contenido p {
+	line-height:22px;
+}
+h2 {
+	font: normal 18px "Trebuchet MS", Verdana, sans-serif;
+	color: #000;
+}
+h3 {
+	font: normal 17px "Trebuchet MS", Verdana, sans-serif;
+	color: #987D7D;
+}
+#contenido h3 {
+	font: bold 14px "Trebuchet MS", Verdana, sans-serif; 
+	color:#666;
+}
+
+#contenido div img {
+	background:#efefef; 
+	border:solid 1px #cccccc; 
+	padding:3px;
+}
+#NombreSitio {
+	display:block;
+	padding: 80px 55px 100px 0px;
+	color: #808040;
+	font: bolder small-caps 22px "Trebuchet MS", Verdana, sans-serif;
+	text-align:left;
+}
+#NombreSitio .desc {
+	font-size:14px; 
+	color:#ccc; 
+	font-variant:normal; 
+	display:block
+}
+#MenuSuper ul {
+	text-align:center; 
+	display:block; 
+	float:right; 
+    width:500px;
+
+}
+#MenuSuper li {
+	display: inline;
+}
+
+#ft_btm{
+	padding:30px 30px 20px 30px;
+	text-align: left;
+	border-top:5px solid #ccc;
+	font-style:italic;
+	font-size:14px;
+
+}
+#btm_cont {
+	padding:5px 45px 30px 45px; 
+	height:25px; 
+}
+#rightcontent { 
+	float:right; 
+	width:750px;
+	margin-left:20px;
+  	box-sizing: border-box;
+  	overflow: hidden;
+	background: #fff;
+  	margin: 20px auto;
+  	background: white;
+  	border-bottom: 1px solid darken(#EDEDED, 10%);
+  	border-radius: 3px;
+	
+}
+
+#rightcontent .cont1 {
+    font-weight: 300;
+	margin-bottom: 1.71875em;
+    padding: 40px;
+	margin: 30px auto;
+	border:#000 solid;
+  }
+  
+#rightcontent h2{
+ display: inline-block;
+    font-size: 0.75em;
+    letter-spacing: 0.15em;
+    line-height: 1.83333em;
+    margin: 0 0 1.83333em 20px;
+    text-transform: uppercase;
+    vertical-align: middle;
+	color:#000;
+	
+ 
+ }
+ 
+ #rigthcontent h2{
+  margin: 0 0 1.83333em 55px;
+ }
+
+#rightcontent p{
+ font-style: italic;
+    line-height: 1.54688em;
+    position: relative;
+    z-index: 1;
+	color: #000;
+	text-align:justify;
+	
+}
+
+
+#contenido th {
+	background:#D2E3F3;
+	padding:5px 15px 5px 15px;
+	color:#000000;
+	font-weight:bold;
+	text-align:center;
+	border-bottom:1px solid #BDDB99;
+	font-size: 16px;
+}
+#contenido td {
+	border-bottom:1px solid #D2E3F3;
+	padding:5px 15px 5px 15px;
+	border-right:1px solid #D2E3F3;
+}
+
+.texto:focus {background:#ffffff;}
+.hide {display:none;}
+
+
+#BarraLateral {
+	 float: left; 
+  width: 200px;
+  min-width: 200px;
+  background: #eee;
+  margin-top: 0px;
+}
+
+#BarraLateral ul {
+	list-style: none;
+  padding: 0px;
+  }
+#BarraLateral li {
+	float: none;
+  width: 100%; 
+  }
+#BarraLateral li a {
+  display: block;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: #444; }
+
+#BarraLateral li a:hover { 
+  border-bottom: 0px;
+  color: #fff; }
+
+#BarraLateral li:first-child a { border-left: 10px solid #BAC358; }
+
+#BarraLateral li:nth-child(2) a { border-left: 10px solid #62BDCF; }
+
+#BarraLateral li:nth-child(3) a { border-left: 10px solid #E05735; }
+
+#BarraLateral li:nth-child(4) a { border-left: 10px solid #af821b; }
+
+#BarraLateral li:last-child a { border-left: 10px solid #837D63; }
+
+#BarraLateral li a:after {
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0px;
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  z-index: -1; }
+#BarraLateral li a:hover:after { width: 100%; }
+#BarraLateral li:first-child a:after { background: #BAC358; }
+#BarraLateral li:nth-child(2) a:after { background: #62BDCF; }
+#BarraLateral li:nth-child(3) a:after { background: #E05735; }
+#BarraLateral li:nth-child(4) a:after { background: #af821b; }
+#BarraLateral li:last-child a:after { background: #837D63; }
+  
+table{
+	margin:0 0 0 0;
+  width: 600px;
+  height: 30px;    
+  border-bottom: 3px #000 solid;
+	}
+table tr{
+	list-style: none;
+  	padding: 0 10px 0 10px;
+}
+
+table tr td {
+	font: 16px Inder, 'Arial', 'sans-serif';
+ color: #000;
+ display:inline-block;   
+}
+
+table tr td a{
+	padding: 10px 24px;
+  text-decoration: none;
+  color: #000;
+}
+
+table tr td a:hover {
+  background-color: #B4B4B4;
+  color: #FFF;
+  -webkit-animation: showMenu 0.8s;
+     -moz-animation: showMenu 0.8s;
+          animation: showMenu 0.8s;
+}
